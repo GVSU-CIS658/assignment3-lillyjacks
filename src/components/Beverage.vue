@@ -3,7 +3,6 @@
     <Cold v-if="isIced" />
     <Hot v-else />
     <Contents>
-      <!-- TOP: Creamer -->
       <template v-slot:top>
         <Creamer
           v-if="props.creamer !== 'No Creamer'"
@@ -11,7 +10,6 @@
         />
       </template>
 
-      <!-- MID: Syrup -->
       <template v-slot:mid>
         <Syrup
           v-if="props.syrup !== 'No Syrup'"
@@ -19,7 +17,6 @@
         />
       </template>
 
-      <!-- BOTTOM: Base -->
       <template v-slot:bottom>
         <Base :type="props.base" />
       </template>
